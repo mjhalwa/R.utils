@@ -81,7 +81,7 @@ setMethodS3("as.character", "binmode", function(x, ...) {
 # @keyword programming
 #*/########################################################################
 intToBin <- function(x) {
-  y <- as.integer(x);
+  y <- as.numeric(x);
   class(y) <- "binmode";
   y <- as.character(y);
   dim(y) <- dim(x);
